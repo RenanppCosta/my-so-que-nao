@@ -13,7 +13,8 @@ module.exports = {
         },
         nome:{
           type: Sequelize.DataTypes.STRING(45),
-          allowNull: false
+          allowNull: false,
+          unique: true
         },
         email:{
           type: Sequelize.DataTypes.STRING(45),
