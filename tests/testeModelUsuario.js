@@ -5,7 +5,7 @@ const { Usuario, sequelize } = require('../models');
 
 //Encontrar pela chave primária
 
-Usuario.findByPk(2, {include: "publicacoes"}).then(result => {
+Usuario.findByPk(1, {include: "publicacoes"}).then(result => {
     console.log(result.toJSON());
     sequelize.close();
 });

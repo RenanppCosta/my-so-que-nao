@@ -33,9 +33,7 @@ module.exports = (sequelize, DataTypes) => {
     )
 
     usuario.associate = (models)=>{
-        usuario.hasMany(
-            models.Publicacao,
-            {foreingKey:"usuarios_id", as:"publicacoes"}
+        usuario.hasMany(models.Publicacao, {foreingKey:"usuarios_id", as:"publicacoes"}
         )
     }
 
